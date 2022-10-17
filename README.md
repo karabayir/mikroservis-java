@@ -29,7 +29,5 @@
  
  
  
- ![rehber](https://user-images.githubusercontent.com/101670417/196186242-2c6d235d-26ac-4849-80dd-1e7942ad8953.jpg)
+![mikroservis](https://user-images.githubusercontent.com/101670417/196227595-ce0cb256-bc41-41a2-b111-a5212b9bac0a.jpg)
 
-
-![rehber2](https://user-images.githubusercontent.com/101670417/196186270-464e3690-c111-43d1-89fb-9ad94bccfce7.jpg)
