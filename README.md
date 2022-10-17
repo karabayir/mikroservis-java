@@ -23,7 +23,7 @@
  
  2-) Feign Client
  
-  Rest Template ile sorgu hazırlanıp gelen json cevabını object mapper kullanımına gerek bırakmadan otomatik olarak istenilen objeye dönüştürür.
+   Gelen json cevabını object mapper kullanımına gerek bırakmadan otomatik olarak istenilen objeye dönüştürür.
   Ayrıca hata ayıklama senaryolarında da kolaylıklar sağlar.
  
  
