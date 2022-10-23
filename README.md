@@ -27,6 +27,21 @@
   Ayrıca hata ayıklama senaryolarında da kolaylıklar sağlar.
  
  
+ #### Fault Tolerance Nedir?
+ 
+  Kütüphaneye isbn ile kitap eklediğimiz zaman o isbn numarasına sahip bir kitap yoksa hata mesajı gönderdik. Ancak hata durumunda ek olarak default bir kitap
+  oluşturmak isteyebiliriz. 
+  
+  Alınan hataya istinaden farklı bir davranış oluşturma işlemine Fault Tolerance diyoruz. 
+ 
+  
+ ### resilience4j
+
+  Fault Tolerance önceden Spring dünyasında Hystrix denilen bir kütüphane ile yapılıyordu.
+  Spring Cloud 2021.0.4 (son) veriyonuyla Hystrix uçurulmuş gözüküyor. 
+  Kullanmak için ek ayarlar gerekir.
+  
+  Bunun yerine Spring için daha tatlı ve kullanılması kolay kütüphane "spring-cloud-circuitbreaker-resilience4j" kütüphanesidir.
  
  
 ![mikroservis](https://user-images.githubusercontent.com/101670417/196227595-ce0cb256-bc41-41a2-b111-a5212b9bac0a.jpg)
