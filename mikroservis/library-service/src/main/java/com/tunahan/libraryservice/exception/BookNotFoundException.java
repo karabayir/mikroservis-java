@@ -1,11 +1,24 @@
 package com.tunahan.libraryservice.exception;
 
 
-public class BookNotFoundException extends RuntimeException {
+public class BookNotFoundException extends RuntimeException{
+	
+	private ExceptionMessage exceptionMessage;
 
 	public BookNotFoundException(String message) {
 		super(message);
 	}
-
 	
+	public BookNotFoundException(ExceptionMessage message) {
+		this.exceptionMessage = message;
+	}
+	
+	public BookNotFoundException(String message , ExceptionMessage exceptionMessage) {
+		super(message);
+		this.exceptionMessage = exceptionMessage;
+	}
+
+	public ExceptionMessage getExceptionMessage() {
+		return exceptionMessage;
+	}
 }
