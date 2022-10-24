@@ -46,3 +46,6 @@
  
 ![mikroservis](https://user-images.githubusercontent.com/101670417/196227595-ce0cb256-bc41-41a2-b111-a5212b9bac0a.jpg)
 
+![fallback](https://user-images.githubusercontent.com/101670417/197426159-a1fffc7d-082a-4271-9c8f-5edd8f677fea.jpg)
+
+
