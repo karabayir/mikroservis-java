@@ -21,7 +21,7 @@ public interface BookServiceClient {
 	
 	@GetMapping("/isbn/{isbn}")
 	@CircuitBreaker(name = "getBookByIsbnCircuitBreaker", fallbackMethod = "getBookFallback")
-	 ResponseEntity<BookIdDto> findByIsbn(@PathVariable String isbn);
+	 ResponseEntity<BookIdDto> findByIsbn(@PathVariable(value = "isbn") String isbn); //value="isbn" feign client için
 	
 	// Bu metod resilience4j ile ayrı bir thread ile çalıştırılacak.
 	default ResponseEntity<BookIdDto> getBookFallback(String isbn, Exception exception){
@@ -33,7 +33,7 @@ public interface BookServiceClient {
 	
 	@GetMapping("/book/{id}")
 	@CircuitBreaker(name = "getBookByIdCircuitBreaker", fallbackMethod = "getBookByIdFallback")
-	 ResponseEntity<BookDto> findBookDetailsById(@PathVariable  String id);
+	 ResponseEntity<BookDto> findBookDetailsById(@PathVariable(value = "id")  String id);
 	
 	// Bu metod resilience4j ile ayrı bir thread ile çalıştırılacak.
 		default ResponseEntity<BookDto> getBookByIdFallback(String id, Exception exception){

@@ -1,5 +1,6 @@
 package com.tunahan.libraryservice.service;
 
+import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.http.ResponseEntity;
@@ -58,5 +59,12 @@ public class LibraryService {
 		library.getUserBookList().add(bookId);
 		
 		libraryRepository.save(library);
+	}
+
+	public List<String> getAllLibraries() {
+		return libraryRepository.findAll()
+				.stream()
+				.map(l-> l.getId())
+				.collect(Collectors.toList());
 	}
 }
